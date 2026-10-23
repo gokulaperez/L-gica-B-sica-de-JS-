@@ -1,0 +1,49 @@
+* 
+{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+.divPai{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #dedede;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider img{
+    width: 400px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.slider img.ativo{
+    opacity: 1;
+}
+
+.slider img:not(:first-child){
+    position: absolute;
+}
+
+
+
+button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
